@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CV</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.row {
+    display: flex;
+    margin: 20px;
+}
+.section {
+    flex: 1;
+    padding: 20px;
+    background-color: #e0e0e0;
+    border: 2px solid purple;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+}
+.row > .section:not(:last-child) {
+            margin-right: 60px; /* Adjust the spacing as needed */
+}
+.special-section {
+    width: 50%;
+    padding: 20px;
+    background-color: #e0e0e0;
+    border: 2px solid purple;
+    border-radius: 12px;
+}
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg-image {
+  background-image: url('https://raw.githubusercontent.com/basilis2/MyCv/main/backround.png');
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  height: 30%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 15px;
+  text-align: center;
+}
+.topnav {
+  overflow: hidden;
+  background-color: teal;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 9px 25px;
+  text-decoration: none;
+  font-size: 17px;
+  border: 1px solid purple;
+}
+
+.topnav a:hover {
+  background-color: green;
+  color: white;
+}
+.topnav a.active {
+  background-color: green;
+  color:white;
+}
+.close{
+    background-color: teal;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.container {
+  width: 100%;
+  background-color: white;
+  border: 1px solid black;
+}
+img.sticky {
+    position: fixed;
+  top: 97%;
+  left: 2%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+}
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+.HTML {width: 80%; background-color: green;}
+.css {width: 70%; background-color: teal;}
+.JAVA {width: 50%; background-color: purple;}
+
+</style>
+</head>
+<body>
+
+<div class="bg-image"></div>
+
+<div class="bg-text" id="top">
+  <h1 style="font-size:50px">I am Basilis Katsikonouris</h1>
+  <p>And I'm a Programmer</p>
+  <div class="topnav">
+    <a class="active" href="#home">HOME</a>
+    <a href="#examples">EXAMPLES</a>
+    <a href="#section1">CONTACT</a></div>
+</div>
+<a href="#top"><img class="sticky" src="https://raw.githubusercontent.com/basilis2/MyCv/main/up.png"></a>
+<hr style="width: 100%; color:purple;">
+<div class="row">
+    <div class="section">
+        <section >
+            <h1 style="text-align:center";><b>PERSONAL INFORMATIONS</b></h1>
+            <hr style="width: 100%; color:purple;">
+            <p><B>- NAME :</B>Basilis Katsikonouris</p>
+            <p><B>- LOCATION :</B>Athens Greece</p>
+            <p><B>- AGE :</B>22 years old</p>
+        </section>
+    </div>
+    <div class="section">
+        <section >
+            <h1 style="text-align:center";><b>EDUCATION</b></h1>
+            <hr style="width: 100%; color:purple;">
+            <p><B>- UNIVERSITY  :</B>University Of Piraeuse</p>
+            <p><B>- DEGREE :</B>Informatics technology</p>
+            <p><B>- STUDY DIRECTION :</B>Software Technology</p>
+        </section>
+    </div>
+</div>
+
+<div class="center-container">
+    <div class="special-section">
+       <section style="text-align: center;">
+            <h1 style="text-align:center";><b>SKILLS</b></h1>
+            <hr style="width: 100%; color:purple;">
+            <p>HTML</p>
+            <div class="container">
+                <div class="skills JAVA">50%</div>
+              </div>
+              <p>CSS</p>
+              <div class="container">
+                <div class="skills JAVA">50%</div>
+              </div>
+              <p>JAVA</p>
+              <div class="container">
+                <div class="skills HTML">80%</div>
+              </div>
+              <p>C#</p>
+              <div class="container">
+                <div class="skills HTML">80%</div>
+              </div>
+              <p>SQL(PostgreSQL)</p>
+              <div class="container">
+                <div class="skills css">70%</div>
+              </div>
+              <p>Android Studio</p>
+              <div class="container">
+                <div class="skills HTML">80%</div>
+              </div>
+        </section>
+    </div>
+</div>
+
+<br><br><hr style="width: 80%;"><br><br>
+
+<h1 style="text-align: center">🧑‍💻 PROJECT EXAMPLES 🧑‍💻</h1><br>
+<div class="center-container">
+    <div class="section">
+        <section id="examples" style="text-align: center;">
+
+        <iframe 
+            width="650" 
+            height="400" 
+            src="https://www.youtube.com/embed/EH_GPRIM3Ic?autoplay=1&loop=1&mute=1" 
+            frameborder="0" 
+            allowfullscreen>
+        </iframe>
+
+        <iframe 
+          width="650" 
+          height="400" 
+          src="https://www.youtube.com/embed/DIcOMJGfvcM?autoplay=1&loop=1&mute=1" 
+          frameborder="0" 
+          allowfullscreen>
+        </iframe>
+       
+        <iframe 
+          width="650" 
+          height="400" 
+          src="https://www.youtube.com/embed/oi3oLVzJShY?autoplay=1&loop=1&mute=1" 
+          frameborder="0" 
+          allowfullscreen>
+        </iframe>
+       
+        <iframe 
+          width="650" 
+          height="400" 
+          src="https://www.youtube.com/embed/hpOLSO6iys4?autoplay=1&loop=1&mute=1" 
+          frameborder="0" 
+          allowfullscreen>
+        </iframe>
+
+        <br>
+        <iframe 
+          width="550" 
+          height="600" 
+          src="https://www.youtube.com/embed/QOnrMQh2urE?autoplay=1&loop=1&mute=1" 
+          frameborder="0" 
+          allowfullscreen>
+        </iframe>
+
+        <iframe 
+          width="550" 
+          height="600" 
+          src="https://www.youtube.com/embed/1Wp6-JOyYJ8?autoplay=1&loop=1&mute=1" 
+          frameborder="0" 
+          allowfullscreen>
+        </iframe>
+
+        </section>
+    </div>
+</div> 
+<br><br>
+
+<div  id="section1" class="close">
+<h2 style="text-align: center;"> CONTACT INFORMATION </h2>
+<p> 📳+30 694 971 6610</p>
+<p> 📧vasiliskatsikonouris@gmail.com</p>
+<a href="https://github.com/basilis2"><img src="https://raw.githubusercontent.com/basilis2/MyCv/e9c560a9f08cbafc6c9c4719c905dae8ba79b21c/github.png" style="width:90px"></a>
+<a href="https://linkedin.com/in/basilis-katsikonouris-0882a9276"><img src="https://raw.githubusercontent.com/basilis2/MyCv/e9c560a9f08cbafc6c9c4719c905dae8ba79b21c/linkedin.png" style="width:90px"></a>
+<a href="mailto:vasiliskatsikonouris@gmail.com? cc=skywalker@starwars.com& bcc=leia@starwars.com& "><img src="https://raw.githubusercontent.com/basilis2/MyCv/e9c560a9f08cbafc6c9c4719c905dae8ba79b21c/gmail-new-icon5198.jpg" style="width:90px">
+<a href="https://www.instagram.com/vasilis_katsikonouris/"><img src="https://raw.githubusercontent.com/basilis2/MyCv/e9c560a9f08cbafc6c9c4719c905dae8ba79b21c/ig.webp" style="width:90px"></a>
+<a href="https://www.facebook.com/profile.php?id=100012343836017&locale=el_GR"><img src="https://raw.githubusercontent.com/basilis2/MyCv/e9c560a9f08cbafc6c9c4719c905dae8ba79b21c/fb.png" style="width:90px"></a>
+</div>
+
+</body>
+</html>
